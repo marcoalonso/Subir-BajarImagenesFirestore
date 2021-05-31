@@ -13,9 +13,12 @@
 		60149A4C266534250008E9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60149A4A266534250008E9E2 /* Main.storyboard */; };
 		60149A4E266534270008E9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60149A4D266534270008E9E2 /* Assets.xcassets */; };
 		60149A51266534270008E9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60149A4F266534270008E9E2 /* LaunchScreen.storyboard */; };
+		60149A592665384B0008E9E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60149A582665384B0008E9E2 /* GoogleService-Info.plist */; };
+		CE9C6AF6E2C43F44C8CAFE84 /* Pods_GuardarImagenFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC7FBF40B6C2FD6EC1FECFD /* Pods_GuardarImagenFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31A8E2823B35F3AD986B837B /* Pods-GuardarImagenFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardarImagenFirebase.debug.xcconfig"; path = "Target Support Files/Pods-GuardarImagenFirebase/Pods-GuardarImagenFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		60149A41266534250008E9E2 /* GuardarImagenFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuardarImagenFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60149A44266534250008E9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60149A46266534250008E9E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		60149A4D266534270008E9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60149A50266534270008E9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60149A52266534270008E9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60149A582665384B0008E9E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AED2419E216E6C31E49A1FC2 /* Pods-GuardarImagenFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardarImagenFirebase.release.xcconfig"; path = "Target Support Files/Pods-GuardarImagenFirebase/Pods-GuardarImagenFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		CCC7FBF40B6C2FD6EC1FECFD /* Pods_GuardarImagenFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardarImagenFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9C6AF6E2C43F44C8CAFE84 /* Pods_GuardarImagenFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F22C2374611D303131F285F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC7FBF40B6C2FD6EC1FECFD /* Pods_GuardarImagenFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60149A38266534250008E9E2 = {
 			isa = PBXGroup;
 			children = (
 				60149A43266534250008E9E2 /* GuardarImagenFirebase */,
 				60149A42266534250008E9E2 /* Products */,
+				729812A897B18496A54A7A06 /* Pods */,
+				5F22C2374611D303131F285F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,19 @@
 				60149A4D266534270008E9E2 /* Assets.xcassets */,
 				60149A4F266534270008E9E2 /* LaunchScreen.storyboard */,
 				60149A52266534270008E9E2 /* Info.plist */,
+				60149A582665384B0008E9E2 /* GoogleService-Info.plist */,
 			);
 			path = GuardarImagenFirebase;
+			sourceTree = "<group>";
+		};
+		729812A897B18496A54A7A06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31A8E2823B35F3AD986B837B /* Pods-GuardarImagenFirebase.debug.xcconfig */,
+				AED2419E216E6C31E49A1FC2 /* Pods-GuardarImagenFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60149A55266534270008E9E2 /* Build configuration list for PBXNativeTarget "GuardarImagenFirebase" */;
 			buildPhases = (
+				8C94F6D5C8665F2AFD5ACAFD /* [CP] Check Pods Manifest.lock */,
 				60149A3D266534250008E9E2 /* Sources */,
 				60149A3E266534250008E9E2 /* Frameworks */,
 				60149A3F266534250008E9E2 /* Resources */,
+				250C7D9A5A5565B951EA0A34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				60149A51266534270008E9E2 /* LaunchScreen.storyboard in Resources */,
+				60149A592665384B0008E9E2 /* GoogleService-Info.plist in Resources */,
 				60149A4E266534270008E9E2 /* Assets.xcassets in Resources */,
 				60149A4C266534250008E9E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		250C7D9A5A5565B951EA0A34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuardarImagenFirebase/Pods-GuardarImagenFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuardarImagenFirebase/Pods-GuardarImagenFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuardarImagenFirebase/Pods-GuardarImagenFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C94F6D5C8665F2AFD5ACAFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuardarImagenFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60149A3D266534250008E9E2 /* Sources */ = {
@@ -283,12 +356,14 @@
 		};
 		60149A56266534270008E9E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A8E2823B35F3AD986B837B /* Pods-GuardarImagenFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4CRXDCNQC;
 				INFOPLIST_FILE = GuardarImagenFirebase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +377,14 @@
 		};
 		60149A57266534270008E9E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED2419E216E6C31E49A1FC2 /* Pods-GuardarImagenFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4CRXDCNQC;
 				INFOPLIST_FILE = GuardarImagenFirebase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
