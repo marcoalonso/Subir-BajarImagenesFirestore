@@ -37,6 +37,7 @@ class ViewController: UIViewController {
 
     @IBAction func subirFotoBtn(_ sender: UIButton) {
     }
+    
     @IBAction func DescargarFotoBtn(_ sender: UIButton) {
     }
     
