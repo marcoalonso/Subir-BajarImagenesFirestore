@@ -16,26 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zvq-gA-DTC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zvq-gA-DTC">
                                 <rect key="frame" x="87" y="124" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="kIS-n7-m9S"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQj-gp-GBt">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQj-gp-GBt">
                                 <rect key="frame" x="116" y="298" width="183" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="l3b-TI-AmH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="     Subir Foto     "/>
                                 <connections>
                                     <action selector="subirFotoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lye-Oc-rCL"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzJ-r7-Kms">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mzJ-r7-Kms">
                                 <rect key="frame" x="87" y="396" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSe-0v-3ES">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSe-0v-3ES">
                                 <rect key="frame" x="116" y="570" width="183" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="UAO-wX-UCC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Descargar Foto">
                                     <color key="titleColor" systemColor="systemRedColor"/>
@@ -47,6 +52,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DQj-gp-GBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="2pu-sn-H9m"/>
+                            <constraint firstItem="DQj-gp-GBt" firstAttribute="top" secondItem="zvq-gA-DTC" secondAttribute="bottom" constant="46" id="4eT-Rn-p0f"/>
+                            <constraint firstItem="SSe-0v-3ES" firstAttribute="top" secondItem="mzJ-r7-Kms" secondAttribute="bottom" constant="46" id="8vs-lj-b5S"/>
+                            <constraint firstItem="zvq-gA-DTC" firstAttribute="trailing" secondItem="mzJ-r7-Kms" secondAttribute="trailing" id="AMR-nU-e5Z"/>
+                            <constraint firstItem="zvq-gA-DTC" firstAttribute="centerX" secondItem="DQj-gp-GBt" secondAttribute="centerX" id="KBp-Ex-uMY"/>
+                            <constraint firstItem="zvq-gA-DTC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="MK8-LI-bac"/>
+                            <constraint firstItem="mzJ-r7-Kms" firstAttribute="top" secondItem="DQj-gp-GBt" secondAttribute="bottom" constant="46" id="NQW-Fa-3Lt"/>
+                            <constraint firstItem="zvq-gA-DTC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nvb-An-eVY"/>
+                            <constraint firstItem="zvq-gA-DTC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="YXw-2X-zEX"/>
+                            <constraint firstItem="DQj-gp-GBt" firstAttribute="leading" secondItem="SSe-0v-3ES" secondAttribute="leading" id="gfn-7e-Prg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SSe-0v-3ES" secondAttribute="bottom" constant="240" id="i1s-1O-rE2"/>
+                            <constraint firstItem="DQj-gp-GBt" firstAttribute="trailing" secondItem="SSe-0v-3ES" secondAttribute="trailing" id="n6j-Ha-tma"/>
+                            <constraint firstItem="zvq-gA-DTC" firstAttribute="leading" secondItem="mzJ-r7-Kms" secondAttribute="leading" id="waS-Rk-WGK"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imagenADescargar" destination="mzJ-r7-Kms" id="OXv-QO-0A2"/>
