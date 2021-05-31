@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		60149A4E266534270008E9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60149A4D266534270008E9E2 /* Assets.xcassets */; };
 		60149A51266534270008E9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60149A4F266534270008E9E2 /* LaunchScreen.storyboard */; };
 		60149A592665384B0008E9E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60149A582665384B0008E9E2 /* GoogleService-Info.plist */; };
+		60149A5D2665410A0008E9E2 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60149A5C2665410A0008E9E2 /* Constantes.swift */; };
 		CE9C6AF6E2C43F44C8CAFE84 /* Pods_GuardarImagenFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC7FBF40B6C2FD6EC1FECFD /* Pods_GuardarImagenFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		60149A50266534270008E9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60149A52266534270008E9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60149A582665384B0008E9E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60149A5C2665410A0008E9E2 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		AED2419E216E6C31E49A1FC2 /* Pods-GuardarImagenFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardarImagenFirebase.release.xcconfig"; path = "Target Support Files/Pods-GuardarImagenFirebase/Pods-GuardarImagenFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		CCC7FBF40B6C2FD6EC1FECFD /* Pods_GuardarImagenFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardarImagenFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 				60149A4F266534270008E9E2 /* LaunchScreen.storyboard */,
 				60149A52266534270008E9E2 /* Info.plist */,
 				60149A582665384B0008E9E2 /* GoogleService-Info.plist */,
+				60149A5C2665410A0008E9E2 /* Constantes.swift */,
 			);
 			path = GuardarImagenFirebase;
 			sourceTree = "<group>";
@@ -91,7 +94,6 @@
 				31A8E2823B35F3AD986B837B /* Pods-GuardarImagenFirebase.debug.xcconfig */,
 				AED2419E216E6C31E49A1FC2 /* Pods-GuardarImagenFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60149A49266534250008E9E2 /* ViewController.swift in Sources */,
+				60149A5D2665410A0008E9E2 /* Constantes.swift in Sources */,
 				60149A45266534250008E9E2 /* AppDelegate.swift in Sources */,
 				60149A47266534250008E9E2 /* SceneDelegate.swift in Sources */,
 			);
